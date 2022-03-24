@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/style.css" />
+	<title>Inscription</title>
+</head>
+<body>
+	<header>
+        <h1>PARKOUR</h1>
+            <ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="movements.html">Mouvement</a></li>
+							<li><a href="games.html">Jeux Vidéos</a></li>
+							<li><a href="subscribe.html">S'inscrire</a></li>
+            </ul>
+            <figure>
+                <img src="static/images/parkour_logo.png" alt="Logo du site" />
+            </figure>
+    </header>
+    <div class="wrapper">
+    	<div class="content">
+    		<form method="post" action="traitement.php">
+    			<fieldset>
+    			    <legend>Vos coordonnées</legend>
+		    			<p>
+		    				<label for="pseudo">Votre pseudo</label>
+		    				<input type="text" name="pseudo" id="pseudo" minlength="2" placeholder="Grastos" autofocus required />
+		    			</p>
+		    			<p class="genre">
+		    				Votre genre:
+		    				<label for="homme">Homme</label>
+		    				<input type="radio" name="sexe" value="homme" id="homme" required>
+
+		    				<label for="femme">Femme</label>
+		    				<input type="radio" name="sexe" value="femme" id="femme" required>
+		    			</p>
+		    			<p>
+		    				<label for="nom">Votre Nom</label>
+		    				<input type="text" name="nom" id="nom" minlength="2" placeholder="Nom" required>
+		    			</p>
+		    			<p>
+		    				<label for="prenom">Votre Prénom</label>
+		    				<input type="text" name="prenom" id="prenom" minlength="2" placeholder="Prénom" required>
+		    			</p>
+		    			<p>
+		    				<label for="date">Date de naissance</label>
+		    				<input type="date" name="date" id="date" required>
+		    			</p>
+		    			<p>
+		    				<label for="ville">Ville</label>
+		    				<input type="text" id="ville" required>
+		    			</p>
+		    			<p>
+		    				<label for="rue">Rue</label>
+		    				<input type="text" name="rue" id="rue" placeholder="N° et nom de rue" required>
+		    			</p>
+		    			<p>
+		    				<label for="postal">Code Postal</label>
+		    				<input type="text" name="postal" id="postal"  required>
+		    			</p>
+		    			<p>
+		    				<label for="pays">Votre Nationalité</label>
+		    				<select name="pays" id="pays" required>
+		    					<option value="france">France</option>
+		    					<option value="usa">USA</option>
+		    					<option value="allemagne">Allemagne</option>
+		    				</select>
+		    			</p>
+		    			<p>
+		    				<label for="mdp">Mot de Passe</label>
+		    				<input type="password" name="mdp" id="mdp" required>
+		    			</p>
+		    			<p>
+		    				<label for="email">Adresse email</label>
+		    				<input type="email" name="email" id="email" required>
+		    			</p>
+		    			<p>
+		    				<label for="tel">n° Téléphone</label>
+		    				<input type="tel" name="tel" id="tel" minlength="10" required>
+		    			</p>
+		    			<input type="submit" name="Envoyer">
+	    		</fieldset>
+    		</form>
+    	</div>
+    </div>
+	<footer>
+		<p>
+			<strong>Lopez</strong> Entertainment.
+		</p>
+		<img src="static/images/All_rights_reserved_logo.png">
+	  </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+	margin: 40px;
+	margin-right: 40px;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(0, 183, 255);
+}
+
+a:hover {
+	color: grey;
+}
+header {
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	border: 1px white solid;
+	border-radius: 10px / 10px;
+	box-shadow: 6px 6px 20px black;
+	margin-bottom: 25px;
+	align-items: center;
+	min-height: 100px;
+
+}
+
+header h1 {
+	margin: 20px;
+	font-size: 40px;
+}
+header ul{
+	display: flex;
+	justify-content: space-around;
+}
+header ul li {
+	margin: 5px 20px;
+	list-style: none;
+}
+header ul li a {
+	color:  black;
+	font-weight: bold;
+	font-size: 20px;
+}
+header figure {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+header img {
+	max-width: 20%;
+	height: 20%;
+}
+
+.wrapper .content h2 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.wrapper {
+	background-color: white;
+	border: 1px white solid;
+	border-radius: 10px / 10px;
+	box-shadow: 6px 6px 20px black;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+.wrapper .content{
+	width: 70%;
+
+}
+.wrapper .content figure {
+	height: 100%px;
+	width: 100%;
+	margin: 0px;
+}
+.wrapper .content img {
+	width: 99%;
+	align-items: center;
+}
+.wrapper .content p {
+	text-align: justify;
+	margin: 50px;
+	}
+.wrapper .bio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 45px;
+}
+.wrapper .bio img {
+	margin-right: 10px;
+	width: 200px;
+	
+}
+
+.wrapper .end h2 {
+	text-align: center;
+}
+.wrapper .end p {
+	text-align: justify;
+	margin: 45px;
+	
+}
+.wrapper .end figure {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.wrapper .end figure img, 
+.wrapper .end figure figcaption {
+	display: block;
+	width: 100%;
+}
+
+.wrapper .end figure figcaption { 
+	padding:5px;
+	font-size:10px;
+	background:#ddd;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 20px;
+}
+
+fieldset {
+	margin: 60px;
+}
+@media all and (max-width: 1068px) {
+	header ul {
+		flex-direction: column;
+	}
+
+	header img, header h1 {
+		display: none;
+	}
+
+}
+
+/* Definition de la class movements-cards */
+.movements-cards {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-right: 40px;
+}
+
+
+.movements-cards li {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width:100%;
+	margin:1%;
+}
+
+
+.movements-cards li strong  ,
+.movements-cards li p {
+	display: block;
+}
+
+.movements-cards li strong {
+	width: 100%;
+	margin-top: 10px;
+	font-size:20px;
+}
+footer {
+	display: flex;
+	background-color: white;
+	border: 1px white solid;
+	border-radius: 10px / 10px;
+	box-shadow: 6px 6px 20px black;
+	margin-top: 25px;
+	align-items: center;
+	min-height: 100px;
+}
+
+footer p{
+	margin-left: 10px;
+}
+
+footer img {
+	width: 1%;
+}
+
+/* def sub */
+.wrapper .content fieldset .genre label {
+	font-size: 15px;
+}
